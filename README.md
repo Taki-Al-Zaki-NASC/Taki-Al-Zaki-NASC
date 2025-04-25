@@ -94,7 +94,7 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/Taki-Al-Zaki-NASC/Taki-Al-Zaki-NASC/output/snake.svg" alt="Snake animation" />
+<img src="https://github.com/Taki-Al-Zaki-NASC/Ns4Lc/blob/output/snake.svg" alt="Snake animation" />
 
 ###
 
