@@ -21,9 +21,8 @@ jobs:
       - name: generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.Taki-Al-Zaki-NASC }}
+          github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg?palette=github-dark
-
 
       - name: push snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
@@ -31,4 +30,4 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.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 }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
