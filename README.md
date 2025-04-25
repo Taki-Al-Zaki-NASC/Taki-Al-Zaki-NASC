@@ -94,7 +94,23 @@
 
 <br clear="both">
 
-<img src="https://github.com/Taki-Al-Zaki-NASC/Ns4Lc/blob/output/snake.svg" alt="Snake animation" />
+<div align="center">
+  <picture>
+    <!-- When prefers dark scheme, use this SVG -->
+    <source
+      srcset="https://raw.githubusercontent.com/Taki-Al-Zaki-NASC/Ns4Lc/output/github-snake-dark.svg"
+      media="(prefers-color-scheme: dark)"
+    >
+    <!-- Fallback (light mode) -->
+    <img
+      src="https://raw.githubusercontent.com/Taki-Al-Zaki-NASC/Ns4Lc/output/github-snake.svg"
+      alt="GitHub Contributions Snake"
+      style="width: 100%; height: auto;"
+    >
+  </picture>
+</div>
+
+
 
 ###
 
