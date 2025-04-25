@@ -1,3 +1,5 @@
+<img src="https://github.com/Taki-Al-Zaki-NASC/Taki-Al-Zaki-NASC/blob/main/banner.png" alt="Banner" />
+
 <h2 align="left">Hi 👋! My name is Taki Al Zaki and I'm a Android & DevOps Engineer </h2>
 
 ###
