@@ -24,8 +24,10 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-          # ✨ Add a custom grid size: more cells = more "food" for snake
-          grid_size: 30x30 # you can try 40x40 if you want an even larger playground
+          grid_size: 20x20   # ⬅️ Slightly smaller grid (better for less contributions)
+          pixel_size: 10     # ⬅️ Make the blocks bigger, so fewer dots look more "full"
+          color_snake: "#FF6F61"  # optional: customize snake color
+          color_dots: "#e1e4e8,#d1d5da,#c1c5cc,#b1b5be,#a1a5af"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
