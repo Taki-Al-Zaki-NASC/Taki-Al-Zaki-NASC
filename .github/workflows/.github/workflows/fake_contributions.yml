@@ -1,0 +1,26 @@
+name: Fake Contributions for Snake Game
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # every day
+  workflow_dispatch:
+
+jobs:
+  generate-contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate 20 fake commits
+        run: |
+          git config --local user.name "${{ github.repository_owner }}"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          for i in {1..20}; do
+            echo "$(date) - commit $i" >> fake_activity_log.txt
+            git add fake_activity_log.txt
+            git commit -m "Fake commit number $i"
+          done
+
+          git push
